@@ -44,8 +44,15 @@ A WhatsApp bot powered by the Shapes API that provides AI-powered conversational
 
 3. Create a `.env` file in the project root and add the following environment variables:
    ```
-   SHAPESINC_API_KEY=your_shapes_api_key
-   SHAPESINC_SHAPE_USERNAME=your_shape_username
+   SHAPESINC_SHAPE_USERNAME=put your shape username here (is after the / in the link you use for accessing your shape
+   SHAPESINC_API_KEY=put the API from your shape here
+   FREE_WILL_INSTRUCTIONS = "put the free will instructions you use on your shape here (don't remove the " in begining and end)"
+   LEVEL_OF_FREE_WILL=put a value between 0 and 1 , 0 means it won't have free will and 1 means will reply always when some talks on group chat
+   DAILY_LEVEL_OF_FREE_WILL= put a value between 0 and 1 , 0 means it won't have free will and 1 means will reply always this is checking the chat once in a while
+   numberRecentMessages= put the number of messages you want your shape to check when checking using free will
+   DAILY_TIME_CHECK= put the number you want on this case 86400000 means a full day 12000 means every 12 seconds so basically adding 000 after how many seconds youw ants shape to check the group chat
+   FAVORITE_PEOPLE ="add here the number plus the country check digits and the the @c.us after, you can add multiple numbers divinding them with "," from example if the country digits aree +351 (this one is from Portugal)    it will be like this (351123456789@c.us,351987654321@c.us) (don't remove the " in begining and end)"
+   KEYWORDS_OF_INTEREST="put any keyword you want dividing it by "," for example (erza,cake,potatoes) (don't remove the " in begining and end)"
    ```
 
 ## Running the Bot
@@ -65,15 +72,22 @@ A WhatsApp bot powered by the Shapes API that provides AI-powered conversational
 
 ## Environment Configuration
 
-- `SHAPESINC_SHAPE_USERNAME`: put your shape username here (is after the / in the link you use for accessing your shape
--`SHAPESINC_API_KEY`: put the API from your shape here
--`FREE_WILL_INSTRUCTIONS` : "put the free will instructions you use on your shape here (don't remove the " in begining and end)"
--`LEVEL_OF_FREE_WILL`:put a value between 0 and 1 , 0 means it won't have free will and 1 means will reply always when some talks on group chat
--`DAILY_LEVEL_OF_FREE_WILL`: put a value between 0 and 1 , 0 means it won't have free will and 1 means will reply always this is checking the chat once in a while
--`numberRecentMessages`: put the number of messages you want your shape to check when checking using free will
--`DAILY_TIME_CHECK`: put the number you want on this case 86400000 means a full day 12000 means every 12 seconds so basically adding 000 after how many seconds youw ants shape to check the group chat
--`FAVORITE_PEOPLE` :"add here the number plus the country check digits and the the @c.us after, you can add multiple numbers divinding them with "," from example if the country digits aree +351 (this one is from Portugal) it will be like this (351123456789@c.us,351987654321@c.us) (don't remove the " in begining and end)"
--`KEYWORDS_OF_INTEREST`:"put any keyword you want dividing it by "," for example (erza,cake,potatoes) (don't remove the " in begining and end)"
+   - `SHAPESINC_SHAPE_USERNAME`: put your shape username here (is after the / in the link you use for accessing your shape
+   -`SHAPESINC_API_KEY`: put the API from your shape here
+
+   -`FREE_WILL_INSTRUCTIONS` : "put the free will instructions you use on your shape here (don't remove the " in begining and end)"
+
+   -`LEVEL_OF_FREE_WILL`:put a value between 0 and 1 , 0 means it won't have free will and 1 means will reply always when some talks on group chat
+
+   -`DAILY_LEVEL_OF_FREE_WILL`: put a value between 0 and 1 , 0 means it won't have free will and 1 means will reply always this is checking the chat once in a while
+
+   -`numberRecentMessages`: put the number of messages you want your shape to check when checking using free will
+
+   - `DAILY_TIME_CHECK`: put the number you want on this case 86400000 means a full day 12000 means every 12 seconds so basically adding 000 after how many seconds youw ants shape to check the group chat
+
+   -`FAVORITE_PEOPLE` :"add here the number plus the country check digits and the the @c.us after, you can add multiple numbers divinding them with "," from example if the country digits aree +351 (this one is from Portugal) it will be like this (351123456789@c.us,351987654321@c.us) (don't remove the " in begining and end)"
+
+   -`KEYWORDS_OF_INTEREST`:"put any keyword you want dividing it by "," for example (erza,cake,potatoes) (don't remove the " in begining and end)"
 
 ## Notes
 
